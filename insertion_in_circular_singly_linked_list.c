@@ -14,7 +14,7 @@ int main(){
     while(choice!=4)   
     {  
         printf("\ninsertion in circular linked list\n"); 
-        printf("\n1.Insert in begining\n2.Insert at last\n3.Exit\n");  
+        printf("\n1.Insert in begining\n2.Insert at last\n3.Display\n4.Exit\n");  
         printf("\nEnter your choice\n");         
         scanf("\n%d",&choice);  
         switch(choice)  
