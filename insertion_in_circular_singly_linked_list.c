@@ -1,6 +1,7 @@
 #include<stdio.h>
 void beg_insert(); 
-void lastinsert();  
+void last_insert();  
+void display();  
 struct node  
 {  
     int data;  
@@ -10,7 +11,7 @@ struct node* head;
 int main(){
     int choice =0; 
     
-    while(choice!=3)   
+    while(choice!=4)   
     {  
         printf("\ninsertion in circular linked list\n"); 
         printf("\n1.Insert in begining\n2.Insert at last\n3.Exit\n");  
@@ -23,12 +24,16 @@ int main(){
                 break;  
             case 2:  
                 lastinsert();         
-                break;  
-            case 3:  
+                break;
+            case 3:
+               display();
+               break;
+            case 4:  
                 exit(0);  
                 break;  
             default:  
                 printf("Please enter valid choice..");  
+                
         }  
     }  
 }  
@@ -65,7 +70,7 @@ void beginsert()
     }  
               
 }  
-void lastinsert()  
+void last_insert()  
 {  
     struct node *ptr,*temp;   
     int item;  
@@ -98,4 +103,26 @@ void lastinsert()
         printf("\nnode inserted\n");  
     }  
   
+}  
+void display()  
+{  
+    struct node *ptr;  
+    ptr=head;  
+    if(head == NULL)  
+    {  
+        printf("\nnothing to print");  
+    }     
+    else  
+    {  
+        printf("\n printing values ... \n");  
+          
+        while(ptr -> next != head)  
+        {  
+          
+            printf("%d\n", ptr -> data);  
+            ptr = ptr -> next;  
+        }  
+        printf("%d\n", ptr -> data);  
+    }  
+              
 }  
