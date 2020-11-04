@@ -8,6 +8,30 @@ struct node
 };  
 struct node* head;
 int main(){
+    int choice =0; 
+    
+    while(choice!=3)   
+    {  
+        printf("\ninsertion in circular linked list\n"); 
+        printf("\n1.Insert in begining\n2.Insert at last\n3.Exit\n");  
+        printf("\nEnter your choice\n");         
+        scanf("\n%d",&choice);  
+        switch(choice)  
+        {  
+            case 1:  
+                beginsert();      
+                break;  
+            case 2:  
+                lastinsert();         
+                break;  
+            case 3:  
+                exit(0);  
+                break;  
+            default:  
+                printf("Please enter valid choice..");  
+        }  
+    }  
+}  
 }
 void beginsert()  
 {  
