@@ -19,11 +19,11 @@ int main(){
 	int element;
 	while(1){
 		printf("\n1.Push\n2.Pop\n3.Display\n4.Exit : ");
-		printf("Enter Your Choice");
+		printf("Enter Your Choice\n");
 		scanf("%d", &choice);
 		switch(choice){
 			case 1:
-				printf("\nElement to be inserted: ");
+				printf("\nEnter Element to be inserted : ");
 				scanf("%d", &element);
 				push(element);
 				break;
@@ -36,7 +36,7 @@ int main(){
 			case 4:
 				exit(1);
 			default:
-				printf("\nInvalid Input!\n");			
+				printf("\nInvalid Input\n");			
 		}
 	} return 0;
 }
