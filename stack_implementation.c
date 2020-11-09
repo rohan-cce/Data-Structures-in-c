@@ -63,4 +63,15 @@ int pop(){
     }
 
 }
-
+void disp(){
+    int i;
+    if(top==-1){
+        printf("\nStack Empty!\n");
+        return;
+    } else {
+        printf("\n");
+        for(i=top;i>=0;i--)
+            printf("\n%d",stack[i]);
+        printf("\n");
+    }
+}
