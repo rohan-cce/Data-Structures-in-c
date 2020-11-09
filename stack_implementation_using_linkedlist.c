@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-struct Node{
+struct Stack{
 	int data;
-	struct Node* next;
+	struct Stack* next;
 };
 
-struct Node* top = NULL;
-struct Node* temp;
+struct Stack* top = NULL;
+struct Stack* temp;
 int count = 0;
 
 void display()
@@ -56,11 +56,11 @@ void display(){
 
 void push(int item){
 	if(top == NULL){
-		top = (struct Node*) malloc(sizeof(struct Node*));
+		top = (struct Stack*) malloc(sizeof(struct Stack*));
 		top->data = item;
 		top->next = NULL;
 	} else {
-		temp = (struct Node*) malloc(sizeof(struct Node*));
+		temp = (struct Stack*) malloc(sizeof(struct Stack*));
 		temp->next = top;
 		temp->data = item;
 		top = temp;
