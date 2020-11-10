@@ -1,19 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define MAX_ELEMENT 50
+#define MAX_ELEMENTS 100
 
 void insert();
 void delete();
 void display();
 
-int queue_array[MAX_ELEMENT];
+int queue[MAX_ELEMENTS];
 int rear = - 1,front = - 1;
 
 int main(){
     int choice;
     while (1){
-
         printf("1.Insert element to queue \n2.Delete element from queue \n3.Display all elements of queue \n4.Quit \n");
         printf("Enter your choice : ");
         scanf("%d", &choice);
@@ -44,7 +43,7 @@ void insert(){
         printf("Insert the element in queue : ");
         scanf("%d", &element);
         rear = rear + 1;
-        queue_array[rear] = element;
+        queue[rear] = element;
       }
 } 
  
@@ -56,7 +55,7 @@ void delete(){
       }
 
     else{
-        printf("Element deleted from queue is : %d\n", queue_array[front]);
+        printf("Element deleted from queue is : %d\n", queue[front]);
         front = front + 1;
     }
 }
@@ -69,7 +68,7 @@ void display(){
     else{
         printf("Queue is : \n");
         for (i = front; i <= rear; i++)
-              printf("%d ", queue_array[i]);
+              printf("%d ", queue[i]);
          printf("\n");
   }
 }
