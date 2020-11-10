@@ -30,7 +30,7 @@ int main(){
                 exit(1);
            default:
                 printf("Wrong choice \n");
-          } 
+        }
     }
 } 
  
