@@ -1,3 +1,4 @@
+//Queue implementation using array
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -44,6 +45,7 @@ void insert(){
         scanf("%d", &element);
         rear = rear + 1;
         queue[rear] = element;
+        printf("Inserted Successfully");
       }
 } 
  
