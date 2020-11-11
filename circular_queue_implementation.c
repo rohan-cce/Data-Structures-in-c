@@ -38,7 +38,7 @@ int main(){
 
 void insert(){
     int element;
-    if((front ==0 && rear == max-1) || front == rear+1){
+    if((front ==0 && rear == MAX-1) || front == rear+1){
         printf("\nCircular Queue Is Full \n");
         return;
     }
@@ -48,7 +48,7 @@ void insert(){
   
     if(front==-1) front=front+1;
   
-    if(rear==max-1) rear=0;
+    if(rear==MAX-1) rear=0;
   
     else rear=rear+1;
         
@@ -89,7 +89,7 @@ void display(){
             printf("%d ",Circular_Q[ip++]);
         printf("\n");
     }else{
-        while(ip<=max-1)
+        while(ip<=MAX-1)
            printf("%d ",Circular_Q[ip++]) ;
       
         ip=0;
