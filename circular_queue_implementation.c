@@ -1,4 +1,4 @@
-//Circular Queue Implementation in C using Array
+//Circular Queue Implementation in C using Arrays
 
 #include<stdio.h>         
 #include<stdlib.h>        
@@ -76,3 +76,25 @@ int delete(){
     return element;
 }
 
+void display(){
+    int ip;
+    if(front==-1){
+        printf("\nThe Circular Queue is Empty\n");
+        return;
+    }
+  
+    ip=front;
+    if(front<=rear){    
+        while(i<=rear)
+            printf("%d ",Circular_Q[i++]);
+        printf("\n");
+    }else{
+        while(i<=max-1)
+           printf("%d ",Circular_Q[i++]) ;
+      
+        i=0;
+        while(i<=rear)
+            printf("%d ",Circular_Q[i++]);
+        printf("\n");
+    }
+}
