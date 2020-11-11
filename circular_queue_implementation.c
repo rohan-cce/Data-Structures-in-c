@@ -85,16 +85,16 @@ void display(){
   
     ip=front;
     if(front<=rear){    
-        while(i<=rear)
-            printf("%d ",Circular_Q[i++]);
+        while(ip<=rear)
+            printf("%d ",Circular_Q[ip++]);
         printf("\n");
     }else{
-        while(i<=max-1)
-           printf("%d ",Circular_Q[i++]) ;
+        while(ip<=max-1)
+           printf("%d ",Circular_Q[ip++]) ;
       
-        i=0;
-        while(i<=rear)
-            printf("%d ",Circular_Q[i++]);
+        ip=0;
+        while(ip<=rear)
+            printf("%d ",Circular_Q[ip++]);
         printf("\n");
     }
 }
