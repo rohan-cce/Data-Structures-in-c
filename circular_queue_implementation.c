@@ -63,7 +63,7 @@ int delete(){
     }
   
     element=Circular_Q[front];
-    if(front==max-1)    front=0;
+    if(front==MAX-1)    front=0;
   
     else if(front==rear){
         front=-1;
