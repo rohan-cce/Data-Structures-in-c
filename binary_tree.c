@@ -5,3 +5,8 @@ struct node{
   int val;
   struct node *rnode;
 }
+
+
+int main(){
+  return 0;
+}
