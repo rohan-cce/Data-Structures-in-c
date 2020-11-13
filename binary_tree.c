@@ -44,5 +44,20 @@ void postorder_traversal(struct node *root) {
 }
 
 int main() {
-  
+    struct node *root= create(4);
+    root->left= create(3);
+    root->right= create(5);
+    root->left->left= create(1);
+    root->left->right= create(2);
+    root->right->left= create(6);
+    root->right->right= create(7);
+
+    printf("printing pre order traversal : \n");
+    preorder_traversal(root);
+
+    printf("printing in order traversal : \n");
+    inorder_traversal(root);
+
+    printf("printing post order traversal: \n");
+    postorder_traversal(root);
 }
