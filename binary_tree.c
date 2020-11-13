@@ -7,16 +7,15 @@ struct Node {
 };
 
 
-struct node* create(int data) {
-    //return the pointer for the new node
-    struct node *ptr= (struct node *)malloc(sizeof(struct node));
+struct Node* create(int data) {
+    struct Node *ptr= (struct Node *)malloc(sizeof(struct Node));
     ptr->data= data;
     ptr->left = NULL;
     ptr->right = NULL;
     return ptr;
 }
 
-void preorder_traversal(struct node *root) {
+void preorder_traversal(struct Node *root) {
     if (root != NULL) {
         printf("%d\n", root->data);
         preorder_traversal(root->left);
@@ -25,7 +24,7 @@ void preorder_traversal(struct node *root) {
     else return;
 }
 
-void inorder_traversal(struct node *root) {
+void inorder_traversal(struct Node *root) {
     if(root != NULL){
         inorder_traversal(root->left);
         printf("%d\n", root->data);
@@ -34,7 +33,7 @@ void inorder_traversal(struct node *root) {
     else return;
 }
 
-void postorder_traversal(struct node *root) {
+void postorder_traversal(struct Node *root) {
     if(root != NULL){
         postorder_traversal(root->left);
         postorder_traversal(root->right);
@@ -44,7 +43,7 @@ void postorder_traversal(struct node *root) {
 }
 
 int main() {
-    struct node *root= create(4);
+    struct Node *root= create(4);
     root->left= create(3);
     root->right= create(5);
     root->left->left= create(1);
