@@ -1,4 +1,5 @@
-/* Linear search 
+/*
+                Linear search 
 +------------+-----------+--------------+------------+
 | Complexity | Best Case | Average Case | Worst Case |
 +------------+-----------+--------------+------------+
