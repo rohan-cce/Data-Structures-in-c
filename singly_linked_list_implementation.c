@@ -178,7 +178,7 @@ int length(){
     else{
         while(x!=NULL){
             x=x->link;
-            count++;
+            count++; 
         }
         return count;
     }
