@@ -25,25 +25,14 @@ struct node{
 struct node* head;
 
 void append();
-int main()
-{
-    printf("*************Single Linked List*****************\n\n");
+int main(){    
+    while(1){
     printf("Choose a operation to be performed:\n");
-    printf("Enter 1 : To append(add at end) a node\n");
-    printf("Enter 2 : To add node at begin when other nodes are there too\n");
-    printf("Enter 3 : To add a node after a particular node\n");
-    printf("Enter 4 : To display all data\n");
-    printf("Enter 5 : To delete a node\n");
-    printf("Enter 6 : To find length\n");
-    printf("Enter 7 : To exit\n");
-
-    while(1)
-    {
+    printf("1.To append(add at end) a node\n2.To add node at begin when other nodes are there too\n3.To add a node after a particular node\n4.To display all data\n5.To delete a node\n6.To find length\n7.exit");
         int n;
         printf("Enter your choice: ");
         scanf("%d",&n);
-        switch(n)
-        {
+        switch(n){
         case 1: 
              append();
              printf("Node created\n");
@@ -84,8 +73,7 @@ void append(){
     ptr->link = NULL;
     if(head == NULL)
         head=ptr;
-    else
-        {
+    else{
             struct node* x = root;
             while(x->link!=NULL){
                 x=x->link;
@@ -101,12 +89,9 @@ void NodeAtBegin(){
     printf("Enter node data: ");
     scanf("%d",&ptr->data);
     ptr->link=NULL;
-    if(head==NULL)
-    {
+    if(head==NULL){
         head=ptr;
-    }
-    else
-    {
+    }else{
         ptr->link=head;
         head=ptr;
     }
@@ -122,9 +107,7 @@ void NodeAfter(){
     if (n>len){
         printf("Invalid location\n");
         printf("Currently list is having %d nodes\n",len);
-    }
-    else
-    {
+    }else{
         struct node* ptr,* x=head;
         ptr=(struct node*)malloc(sizeof(struct node));
         printf("Enter node data: ");
@@ -147,10 +130,8 @@ void display(){
     printf("Elements are: ");
     if(head=NULL)
         printf("List is empty");
-    else
-    {
-        while(x!=NULL)
-        {
+    else{
+        while(x!=NULL){
             printf("%d  ",x->data);
             x=x->link;
         }
@@ -166,20 +147,16 @@ void del(){
         struct node* x=head;
     if (n>length())
         printf("Invalid location\n");
-    else if(n==1)
-    {
+    else if(n==1){
         x=head;
         head= x->link;
         x->link=NULL;
         free(x);
         printf("Node deleted\n");
-    }
-    else
-    {
+    }else{
         int i=1;
         struct node* p=head;
-        while(i<n-1)
-        {
+        while(i<n-1){
             x=x->link;
             i++;
         }
@@ -198,10 +175,8 @@ int length(){
     int count=0;
     if(head==NULL)
         return 0;
-    else
-    {
-        while(x!=NULL)
-        {
+    else{
+        while(x!=NULL){
             x=x->link;
             count++;
         }
