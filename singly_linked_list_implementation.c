@@ -2,7 +2,19 @@
 
     Linked List can be defined as collection of objects called nodes that are randomly stored in the memory.
     A node contains two fields i.e. data stored at that particular address and the pointer which contains the address of the next node in the memory.
-    The last node of the list contains pointer to the null.
+    The last node of the list contains pointer to the null.     
+   
+                                                            Linked list
+                +----------------------------------------------------------------------------------+--------------------+
+                |                                   Time complexity                                |   Space Complexity |
+                +----------------------------------------+-----------------------------------------+--------------------+
+                |               Average case             |                   Worst Case            |     Worst Case     |
+                +--------+--------+-----------+----------+---------+--------+-----------+----------+--------------------+
+                | Access | Search | Insertion | Deletion |  Access | Search | Insertion | Deletion |                    |
+                +--------+--------+-----------+----------+---------+--------+-----------+----------+--------------------+
+                |  θ(n)  |  θ(n)  |    θ(1)   |   θ(1)   |   O(n)  |  O(n)  |   O(1)    |   O(1)   |        O(n)        |
+                +--------+--------+-----------+----------+---------+--------+-----------+----------+--------------------+
+
 */
 #include <stdio.h>
 #include <stdlib.h>
