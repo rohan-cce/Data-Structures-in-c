@@ -3,6 +3,18 @@
 /Doubly linked list is a complex type of linked list in which a node contains a pointer to the previous 
 /as well as the next node in the sequence.
 */
+/*
+                                                            Doubly Linked list
+                +----------------------------------------------------------------------------------+--------------------+
+                |                                   Time complexity                                |   Space Complexity |
+                +----------------------------------------+-----------------------------------------+--------------------+
+                |               Average case             |                   Worst Case            |     Worst Case     |
+                +--------+--------+-----------+----------+---------+--------+-----------+----------+--------------------+
+                | Access | Search | Insertion | Deletion |  Access | Search | Insertion | Deletion |                    |
+                +--------+--------+-----------+----------+---------+--------+-----------+----------+--------------------+
+                |  θ(n)  |  θ(n)  |    θ(1)   |   θ(1)   |   O(n)  |  O(n)  |   O(1)    |   O(1)   |        O(n)        |
+                +--------+--------+-----------+----------+---------+--------+-----------+----------+--------------------+
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
