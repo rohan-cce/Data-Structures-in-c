@@ -17,13 +17,13 @@ struct Node{
 struct Node* HEAD=NULL;
 struct Node* LAST=NULL;
 
-void display()
-void create_first()
-void create_last()
-void create_any()
-void delete_first()
-void delete_last()
-void delete_any()
+void display();
+void create_first();
+void create_last();
+void create_any();
+void delete_first();
+void delete_last();
+void delete_any();
 
 int main(){
 	int choice;
