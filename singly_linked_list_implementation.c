@@ -4,7 +4,7 @@
     A node contains two fields i.e. data stored at that particular address and the pointer which contains the address of the next node in the memory.
     The last node of the list contains pointer to the null.     
    
-                                                            Linked list
+                                                            Singly Linked list
                 +----------------------------------------------------------------------------------+--------------------+
                 |                                   Time complexity                                |   Space Complexity |
                 +----------------------------------------+-----------------------------------------+--------------------+
