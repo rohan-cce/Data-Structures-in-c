@@ -5,4 +5,4 @@
 +------------+-----------+--------------+------------+
 | Time       |  O(1)     |   O(log n)   | O(log n)   | 
 +------------+-----------+--------------+------------+
-|  	   Worst case space complexity      |
+|  	   Worst case space complexity      |    O(1)    |
