@@ -9,8 +9,7 @@
 +---------------------------------------+------------+
 */
 #include<stdio.h>
-int main()
-{
+int main(){
     int i,start,mid,end,element;
     int binary_search_array[] = {10,15,28,32,45,49,52,58,64,78,89,94,99};
     start = 0;
@@ -23,16 +22,10 @@ int main()
         if(binary_search_array[mid] == element){
             printf("%d find a %d",key,mid+1);
             break;
-        }
-        else if(binary_search_array[mid] > element){
-
+        }else if(binary_search_array[mid] > element){
             end = mid - 1;
-
-        }
-        else{
-
+        }else{
             start = mid + 1;
-
         }
     }
     while(start <= end);
