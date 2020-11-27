@@ -21,7 +21,7 @@ int main(){
     do{
         mid = (int) ((start + end) / 2);
         if(binary_search_array[mid] == element){
-            printf("%d find a %d",key,mid+1);
+            printf("%d find a %d",element,mid+1);
             break;
         }else if(binary_search_array[mid] > element){
             end = mid - 1;
