@@ -7,7 +7,7 @@ struct Node{
    struct Node *next;
 };
 struct Node *front = NULL;
-struct Node *rear = NULL:
+struct Node *rear = NULL;
 
 void insert(int element);
 void delete();
