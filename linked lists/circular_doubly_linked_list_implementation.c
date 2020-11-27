@@ -109,7 +109,7 @@ void insertion_last(){
        }  
        else{  
           temp = head;  
-          while(temp->next !=head)4{  
+          while(temp->next !=head){  
               temp = temp->next;  
           }  
           temp->next = ptr;  
