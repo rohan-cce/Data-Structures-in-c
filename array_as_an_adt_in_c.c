@@ -1,3 +1,4 @@
+//Array as an adt in c
 #include<stdio.h>
 #include<stdlib.h>
 
