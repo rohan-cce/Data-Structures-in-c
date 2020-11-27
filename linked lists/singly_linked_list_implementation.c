@@ -74,7 +74,7 @@ void append(){
     if(head == NULL)
         head=ptr;
     else{
-            struct node* x = root;
+            struct node* x = ptr;
             while(x->link!=NULL){
                 x=x->link;
             }
