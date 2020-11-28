@@ -124,8 +124,7 @@ void create_last(){
 		p->prev=LAST;
 		p->next=NULL;
 		LAST=p;
-	}
-	printf("\nInserted!");
+	}printf("\nInserted!");
 }
 
 
@@ -143,8 +142,7 @@ void create_first(){
 		HEAD->prev=p;
 		p->prev=NULL;
 		HEAD=p;
-	}
-	printf("\nDone!");
+	}printf("\nDone!");
 }
 void delete_first(){
 	if(HEAD==NULL){
@@ -190,9 +188,7 @@ void delete_any(){
 				printf("\nInvalid index!\nIndex out of range");
 				return;
 			}
-		}
-		
-		if(q==LAST){
+		}if(q==LAST){
 			delete_last();
 			return;
 		}
@@ -212,9 +208,7 @@ void display(){
 	
 	if(HEAD==NULL){
 		printf("\nEmpty list\n");
-	}
-	
-	else{
+	}else{
 		struct Node* q=HEAD;
 		printf("\n");
 		while(q!=LAST){
