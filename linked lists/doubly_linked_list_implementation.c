@@ -106,9 +106,7 @@ void create_any(){
 			q->prev->next=p;
 			q->prev=p;
 		}
-	}
-	
-	printf("\nElement Inserted");
+	}printf("\nElement Inserted");
 }
 
 void create_last(){
