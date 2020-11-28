@@ -147,13 +147,13 @@ int main(){
 	        b=findmax(root);
 	        printf("%d",b->data);
 	        break;
-	      case 8:
-		       printf("Enter the element to be searched \n");
-		       scanf("%d",&s);
-	        	if(search(root,s))
-		            printf("Element found %d",s);
-		        else
-		          	printf("Element not found %d",s);
+	    case 8:
+		    printf("Enter the element to be searched \n");
+		    scanf("%d",&s);
+	      	if(search(root,s))
+		        printf("Element found %d",s);
+		    else
+		       	printf("Element not found %d",s);
         case 9:    
             exit(0);
         default :     
