@@ -45,12 +45,12 @@ void display(){
 	if(count == 0){
 		printf("\nStack is Empty \n");
 		return;
-	} else {
+	}else{
 		printf("\nThere are  %d items:-\n", count);
 		while(temp != NULL){
 			printf("%d ", temp->data);
 			temp = temp->next;
-		} printf("\n");
+		}printf("\n");
 	}
 }
 
@@ -59,7 +59,7 @@ void push(int item){
 		top = (struct Stack*) malloc(sizeof(struct Stack*));
 		top->data = item;
 		top->next = NULL;
-	} else {
+	}else{
 		temp = (struct Stack*) malloc(sizeof(struct Stack*));
 		temp->next = top;
 		temp->data = item;
