@@ -20,14 +20,12 @@ struct node* head;
 int main(){
     int choice =0; 
     
-    while(choice!=4)   
-    {  
+    while(choice!=4){  
         printf("\ninsertion in circular linked list\n"); 
         printf("\n1.Insert in begining\n2.Insert at last\n3.Display\n4.Exit\n");  
         printf("\nEnter your choice\n");         
         scanf("\n%d",&choice);  
-        switch(choice)  
-        {  
+        switch(choice){  
             case 1:  
                 beginsert();      
                 break;  
@@ -46,14 +44,12 @@ int main(){
         }  
     }  
 }  
-}
-void beginsert()  
-{  
+
+void beginsert(){  
     struct node *ptr,*temp;   
     int item;   
     ptr = (struct node *)malloc(sizeof(struct node));  
-    if(ptr == NULL)  
-    {  
+    if(ptr == NULL){  
         printf("\nOVERFLOW");  
     }  
     else   
