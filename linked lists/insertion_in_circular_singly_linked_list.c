@@ -98,17 +98,14 @@ void display(){
     ptr=head;  
     if(head == NULL){  
         printf("\nnothing to print");  
-    }else  
-    {  
+    }else{  
         printf("\n printing values ... \n");  
           
-        while(ptr -> next != head)  
-        {  
+        while(ptr -> next != head){  
           
             printf("%d\n", ptr -> data);  
             ptr = ptr -> next;  
-        }  
-        printf("%d\n", ptr -> data);  
+        }printf("%d\n", ptr -> data);  
     }  
               
 }  
