@@ -28,7 +28,7 @@ struct node* find_minimum(struct node *root){
 
 struct node* insert(struct node *root, int x){
 	if(root==NULL){
-	 root = (struct node*)malloc(sizeof(struct node ));
+	root = (struct node*)malloc(sizeof(struct node ));
     root->data = x;
     root->left_child = NULL;
     root->right_child = NULL; 
