@@ -27,8 +27,7 @@
         }   
         if(flag != 0){  
             printf("\nItem found at location %d\n",flag);  
-        }  
-        else{  
+        }else{  
             printf("\nItem not found\n");   
         }  
     }   

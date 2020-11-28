@@ -9,6 +9,7 @@
 +---------------------------------------+------------+
 
 */
+
 #include<stdio.h>
 int main(){
     int i,start,mid,end,element;
