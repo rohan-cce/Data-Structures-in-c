@@ -44,21 +44,21 @@ int main () {
 
 }while(choice != 3); 
 } 
-   void create(int item){ 
+void create(int item){ 
   struct Node *ptr = (struct Node *) malloc(sizeof(struct Node)); 
   struct Node *temp; 
   if(ptr == NULL)  printf("\nOVERFLOW\n"); 
-else {
+    
+    else {
    ptr->data=item; 
    if(head == NULL) {
   head = ptr; 
   ptr -> next = head; 
   ptr -> prev = head; 
-} 
-else {
+}else {
   temp = head; 
   while(temp->next !=head) {
-   temp = temp->next; 
+    temp = temp->next; 
 } 
   temp->next = ptr; 
   ptr ->prev=temp; 
@@ -72,13 +72,11 @@ else {
   struct Node *temp; 
   if(head == NULL) {
   printf("\n UNDERFLOW\n"); 
-} 
-  else if(head->next == head) {
+}else if(head->next == head) {
   head = NULL; 
   free(head); 
   printf("\nNode Deleted\n"); 
-} 
-else {
+}else {
   temp = head; 
   while(temp -> next != head) {
   temp = temp -> next; 
