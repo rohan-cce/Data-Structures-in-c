@@ -18,8 +18,7 @@ int main(){
         printf("\nEnter Your Choice:");
         scanf("%d",&choice);
         switch(choice){
-        
-          case 1:
+        case 1:
             insert();
             break;
         case 2:
