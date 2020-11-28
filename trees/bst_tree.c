@@ -42,7 +42,6 @@ struct node* insert(struct node *root, int x){
 
 
 struct node* deletee(struct node *root, int x){
-    
     if(root==NULL)
         return NULL;
     if (x>root->data)
@@ -112,7 +111,7 @@ void postorder(struct node *root){
 }
 
 int main(){
-	  struct node *root,*a,*b,*c;
+	struct node *root,*a,*b,*c;
     int ch,n,x,s;
     root=NULL;
     
@@ -121,13 +120,12 @@ int main(){
         printf("\nEnter your choice : ");
         scanf("%d", &ch);
         switch (ch){
-       
-          case 1:  
+        case 1:  
 	          printf("Enter the node to be inserted \n");
 	          scanf("%d",&x);
 	          root=insert(root,x);
             break;
-         case 2:    
+        case 2:    
 		        printf("Enter the node to be deleted \n");
 		        scanf("%d",&n);
             root=deletee(root,n);
