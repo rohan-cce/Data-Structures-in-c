@@ -22,7 +22,8 @@ int main(){
                 a[j] = temp;   
             }   
         }   
-    }   
+    }
+       
     printf("Sorted Element List \n");  
     for(i = 0; i<n; i++){  
         printf("%d\n",a[i]);  
