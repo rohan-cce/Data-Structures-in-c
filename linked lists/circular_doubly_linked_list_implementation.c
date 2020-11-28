@@ -16,7 +16,6 @@ struct node{
     struct node *next;  
     int data;  
 };  
-
 struct node *head;  
 
 void insertion_beginning();  
@@ -28,10 +27,7 @@ void search();
 
 int main (){  
 int choice =0;  
-    while(choice != 9){
-        printf("\n*********Main Menu*********\n");  
-        printf("\nselect from the below options\n");  
-        printf("\n===============================================\n");  
+    while(choice != 9){  
         printf("\n1.Insert in Beginning\n2.Insert at last\n3.Delete from Beginning\n4.Delete from last\n5.Search\n6.Show\n7.Exit\n");  
         printf("\nEnter your choice?\n");  
         scanf("\n%d",&choice);  
