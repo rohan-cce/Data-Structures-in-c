@@ -82,31 +82,23 @@ void last_insert(){
         if(head == NULL){  
             head = ptr;  
             ptr -> next = head;    
-        }  
-        else  
-        {  
+        }else{  
             temp = head;  
-            while(temp -> next != head)  
-            {  
+            while(temp -> next != head){  
                 temp = temp -> next;  
             }  
             temp -> next = ptr;   
             ptr -> next = head;  
-        }  
-          
-        printf("\nnode inserted\n");  
+        }printf("\nnode inserted\n");  
     }  
   
 }  
-void display()  
-{  
+void display(){  
     struct node *ptr;  
     ptr=head;  
-    if(head == NULL)  
-    {  
+    if(head == NULL){  
         printf("\nnothing to print");  
-    }     
-    else  
+    }else  
     {  
         printf("\n printing values ... \n");  
           
