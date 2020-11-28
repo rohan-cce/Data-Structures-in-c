@@ -36,6 +36,5 @@ int main(){
     setValues(&arr);
     printf("display function");
     show(&arr);
-
     return 0;
 }
