@@ -10,9 +10,9 @@ struct Stack* top = NULL;
 struct Stack* temp;
 int count = 0;
 
-void display()
-void push(int item)
-void pop()
+void display();
+void push(int item);
+void pop();
 
 int main(){
 	int choice;
