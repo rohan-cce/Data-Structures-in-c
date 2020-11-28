@@ -52,7 +52,7 @@ int pop(){
     if(top==-1){
         printf("\nStack is Empty \n");
         return;
-    } else {
+    }else{
         del=stack[top];
         printf("\n%d was Deleted !\n",del);
         top--;
@@ -65,7 +65,7 @@ void disp(){
     if(top==-1){
         printf("\nStack Empty!\n");
         return;
-    } else {
+    }else{
         printf("\n");
         for(i=top;i>=0;i--)
             printf("\n%d",stack[i]);
