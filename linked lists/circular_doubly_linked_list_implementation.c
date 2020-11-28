@@ -101,8 +101,7 @@ void insertion_last(){
            head = ptr;  
            ptr -> next = head;   
            ptr -> prev = head;   
-       }  
-       else{  
+       }else{  
           temp = head;  
           while(temp->next !=head){  
               temp = temp->next;  
@@ -112,8 +111,7 @@ void insertion_last(){
           head -> prev = ptr;  
       ptr -> next = head;  
         }  
-   }  
-     printf("\nnode inserted\n");  
+   } printf("\nnode inserted\n");  
 }  
   
 void deletion_beginning(){  
@@ -124,8 +122,7 @@ void deletion_beginning(){
         head = NULL;   
         free(head);  
         printf("\nnode deleted\n");  
-    }  
-    else{  
+    }else{  
         temp = head;   
         while(temp -> next != head){  
             temp = temp -> next;  
@@ -145,8 +142,7 @@ void deletion_last(){
         head = NULL;   
         free(head);   
         printf("\nnode deleted\n");  
-    }  
-    else{  
+    }else{  
         ptr = head;   
         if(ptr->next != head){  
             ptr = ptr -> next;   
@@ -164,8 +160,7 @@ void display(){
     ptr=head;  
     if(head == NULL){  
         printf("\nnothing to print");  
-    }     
-    else{  
+    }else{  
         printf("\n printing values ... \n");  
           
         while(ptr -> next != head){  
@@ -189,22 +184,19 @@ void search(){
         if(head ->data == item){  
         printf("item found at location %d",i+1);  
         flag=0;  
-        }  
-        else{  
+        }else{  
         while (ptr->next != head){  
             if(ptr->data == item){  
                 printf("item found at location %d ",i+1);  
                 flag=0;  
                 break;  
-            }   
-            else {  
+            }else {  
                 flag=1;  
             }  
             i++;  
             ptr = ptr -> next;  
         }  
-        }  
-        if(flag != 0){  
+        }if(flag != 0){  
             printf("Item not found\n");  
         }  
     }     
