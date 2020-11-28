@@ -139,11 +139,11 @@ int main(){
         case 5:    
             postorder(root);
             break;
-	      case 6:
-		        a=findmin(root);
-		        printf("%d",a->data);
-	          break;
-	      case 7:
+	    case 6:
+		    a=findmin(root);
+		    printf("%d",a->data);
+	        break;
+	    case 7:
 	        b=findmax(root);
 	        printf("%d",b->data);
 	        break;
