@@ -16,10 +16,8 @@ struct ToDo{
 };
 
 struct ToDo *start=NULL;
-int main()
-{
+int main(){
     int choice;
-    
     while(1){
         system("cls");
         printf("\t#################################### YOUR TODO LIST APP ##############################################\n\n");
@@ -74,9 +72,8 @@ void create(){
     char k;
     struct ToDo *t,*temp;
     while(1){
-      
         printf("\nWant to add?y/n : ");
-         fflush(stdin);
+        fflush(stdin);
         scanf("%c",&k);
         if(k=='n')
             break;
@@ -124,8 +121,7 @@ void del(){
         free(temp);
         fixcount();
         break;
-    }
-    else{
+    }else{
         temp1=temp;
         temp=temp->link;
     }
