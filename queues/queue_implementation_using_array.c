@@ -54,9 +54,7 @@ void delete(){
       if (front == - 1 || front > rear){
             printf("Queue Underflow \n");
             return ;
-      }
-
-    else{
+      }else{
         printf("Element deleted from queue is : %d\n", queue[front]);
         front = front + 1;
     }
