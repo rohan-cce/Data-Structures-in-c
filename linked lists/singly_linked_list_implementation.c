@@ -59,12 +59,8 @@ int main(){
              printf("Invalid input\n");
         }
     }
-
-    return 0;
+return 0;
 }
-
-
-
 void append(){
     struct node* ptr;
     ptr=(struct node*)malloc(sizeof(struct node));
@@ -135,8 +131,7 @@ void display(){
             printf("%d  ",x->data);
             x=x->link;
         }
-    }
-    printf("\n");
+    }printf("\n");
 }
 
 
