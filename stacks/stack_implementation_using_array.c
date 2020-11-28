@@ -13,10 +13,7 @@ void disp();
 int main(){
     int choice,r;        
     while(1){
-        printf("\n1. Push");
-        printf("\n2. Pop");
-        printf("\n3. Display the Stack ");
-        printf("\n4. EXIT");
+        printf("\n1.Push\n2.Pop\n3.Display the Stack\n4.EXIT");
         printf("\n\nEnter Your Choice ");
         scanf("%d",&choice);
         switch(choice){
@@ -42,7 +39,7 @@ void push(){
     if(top==max-1){
         printf("\nStack is Full \n");
         return;
-    } else {
+    }else{
         printf("\nEnter a number for Insert : ");
         scanf("%d",&number);
         top++;
