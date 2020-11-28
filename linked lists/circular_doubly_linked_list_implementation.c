@@ -63,6 +63,7 @@ void insertion_beginning(){
    int item;  
    ptr = (struct node *)malloc(sizeof(struct node));  
    if(ptr == NULL)  printf("\nOVERFLOW");  
+   
    else{
     printf("\nEnter Item value");  
     scanf("%d",&item);  
@@ -72,8 +73,7 @@ void insertion_beginning(){
       head = ptr;  
       ptr -> next = head;   
       ptr -> prev = head;   
-   }  
-   else{  
+   }else{  
        temp = head;   
     while(temp -> next != head){  
         temp = temp -> next;   
@@ -83,8 +83,7 @@ void insertion_beginning(){
     head -> prev = ptr;  
     ptr -> next = head;  
     head = ptr;  
-   }  
-   printf("\nNode inserted\n");  
+   } printf("\nNode inserted\n");  
 }  
      
 }  
