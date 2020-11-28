@@ -75,14 +75,11 @@ void last_insert(){
     ptr = (struct node *)malloc(sizeof(struct node));  
     if(ptr == NULL){  
         printf("\nOVERFLOW\n");  
-    }  
-    else  
-    {  
+    }else{  
         printf("\nEnter Data?");  
         scanf("%d",&item);  
         ptr->data = item;  
-        if(head == NULL)  
-        {  
+        if(head == NULL){  
             head = ptr;  
             ptr -> next = head;    
         }  
