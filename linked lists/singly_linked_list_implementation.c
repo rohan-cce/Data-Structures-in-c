@@ -27,9 +27,9 @@ struct node* head;
 void append();
 int main(){    
     while(1){
+        int n;
     printf("Choose a operation to be performed:\n");
     printf("1.To append(add at end) a node\n2.To add node at begin when other nodes are there too\n3.To add a node after a particular node\n4.To display all data\n5.To delete a node\n6.To find length\n7.exit");
-        int n;
         printf("Enter your choice: ");
         scanf("%d",&n);
         switch(n){
