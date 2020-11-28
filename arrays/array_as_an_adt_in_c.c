@@ -1,9 +1,7 @@
 //Array as an adt in c
 #include<stdio.h>
 #include<stdlib.h>
-
-struct Array
-{
+struct Array{
     int total_size;
     int used_size;
     int *ptr;
@@ -16,16 +14,14 @@ void createArray(struct Array * a, int tSize, int uSize){
 }
 
 void show(struct Array *a){
-    for (int i = 0; i < a->used_size; i++)
-    {
+    for (int i = 0; i < a->used_size; i++){
         printf("%d\n", (a->ptr)[i]);
     }
 }
 
 void setValues(struct Array *a){
     int n;
-    for (int i = 0; i < a->used_size; i++)
-    {
+    for (int i = 0; i < a->used_size; i++){
         printf("Enter element %d", i);
         scanf("%d", &n);
         (a->ptr)[i] = n;
