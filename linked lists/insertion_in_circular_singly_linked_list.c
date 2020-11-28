@@ -65,18 +65,15 @@ void beginsert(){
             ptr->next = head;   
             temp -> next = ptr;   
             head = ptr;  
-        }   
-        printf("\nnode inserted\n");  
+        }printf("\nnode inserted\n");  
     }  
               
 }  
-void last_insert()  
-{  
+void last_insert(){  
     struct node *ptr,*temp;   
     int item;  
     ptr = (struct node *)malloc(sizeof(struct node));  
-    if(ptr == NULL)  
-    {  
+    if(ptr == NULL){  
         printf("\nOVERFLOW\n");  
     }  
     else  
