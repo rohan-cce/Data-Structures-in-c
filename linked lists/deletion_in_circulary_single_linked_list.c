@@ -13,18 +13,17 @@ The circular singly liked list has no beginning and no ending. There is no null 
 void create(int); 
 void deletion_beginning(); 
    
-   struct Node { 
+struct Node { 
    int data; 
    struct Node *next; 
   struct Node *prev;
 }; 
-
-  struct Node *head; 
+struct Node *head; 
   
-  int main () {
+int main () {
   int choice,item,choice1; 
   
- do {
+  do {
   printf("1.Append List\n2.Delete Node from beginning\n3.Exit\n4.Enter your choice?"); 
   scanf("%d",&choice); 
   switch(choice) {
@@ -40,10 +39,10 @@ void deletion_beginning();
     exit(0); 
   break; 
     default: 
-  printf("\n\Enter valid choice\n"); 
+  printf("\nEnter valid choice\n"); 
 } 
 
-}  while(choice != 3); 
+}while(choice != 3); 
 } 
    void create(int item){ 
   struct Node *ptr = (struct Node *) malloc(sizeof(struct Node)); 
