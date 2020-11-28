@@ -51,19 +51,14 @@ void beginsert(){
     ptr = (struct node *)malloc(sizeof(struct node));  
     if(ptr == NULL){  
         printf("\nOVERFLOW");  
-    }  
-    else   
-    {  
+    }else{  
         printf("\nEnter the node data?");  
         scanf("%d",&item);  
         ptr -> data = item;  
-        if(head == NULL)  
-        {  
+        if(head == NULL){  
             head = ptr;  
             ptr -> next = head;  
-        }  
-        else   
-        {     
+        }else{     
             temp = head;  
             while(temp->next != head)  
                 temp = temp->next;  
