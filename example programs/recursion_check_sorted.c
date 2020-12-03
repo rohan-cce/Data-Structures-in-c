@@ -1,7 +1,8 @@
-//Program to check whether the array is sorted or not using recursion
+/* Program to check whether the array is sorted or not using recursion */
 
 //Time Complexity O(n) 
 //Space Complexity O(n) for recursive stack space
+
 #include<stdio.h>
 int is_array_in_sorted_order(int a[],int n){
 
