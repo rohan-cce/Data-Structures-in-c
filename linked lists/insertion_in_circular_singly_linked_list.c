@@ -1,7 +1,7 @@
 /*
                                     Insertion in circular singly linked list
                                     
-In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. 
+                    In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. 
 We can have circular singly linked list as well as circular doubly linked list.
 
 We traverse a circular singly linked list until we reach the same node where we started. 
