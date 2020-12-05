@@ -70,7 +70,7 @@ int main(){
 			default:
 				printf("\nInvalid Choice\n");
 		}
-		printf("\n\n");
+		printf("\n");
 	}
 }
 void create_any(){
