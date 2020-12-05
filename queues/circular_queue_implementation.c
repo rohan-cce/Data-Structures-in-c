@@ -1,4 +1,5 @@
-/*Circular Queue Implementation in C using Arrays
+/*
+                    Circular Queue Implementation in C using Arrays
 
 #include<stdio.h>         
 #include<stdlib.h>        
