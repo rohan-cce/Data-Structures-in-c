@@ -1,7 +1,7 @@
 /*
                                             Bubble sort
                             +------------+-----------+--------------+------------+
-| Complexity | Best Case | Average Case | Worst Case |
+                            | Complexity | Best Case | Average Case | Worst Case |
 +------------+-----------+--------------+------------+
 |    Time    |   O(n^2)  |    O(n)      |   O(n^2)   |
 +------------+-----------+--------------+------------+
