@@ -5,7 +5,7 @@
                     We can have circular singly linked list as well as circular doubly linked list.
 
                     We traverse a circular singly linked list until we reach the same node where we started. 
-The circular singly liked list has no beginning and no ending. There is no null value present in the next part of any of the nodes. 
+The circular singly linked list has no beginning and no ending. There is no null value present in the next part of any of the nodes. 
 */
 #include<stdio.h>
 
