@@ -2,16 +2,17 @@
                                          Binary search      
 
                     
-Binary Search is a searching algorithm for finding an element's position in a sorted array.
+                    Binary Search is a searching algorithm for finding an element's position in a sorted array.
+
                                          
                                           
-                    +------------+-----------+--------------+------------+
-                    | Complexity | Best Case | Average Case | Worst Case |
-                    +------------+-----------+--------------+------------+
-                    | Time       |  O(1)     |   O(log n)   | O(log n)   | 
-                    +------------+-----------+--------------+------------+
-                    |  	 Worst case space complexity    |    O(1)    |
-                    +---------------------------------------+------------+
+                                  +------------+-----------+--------------+------------+
+                                  | Complexity | Best Case | Average Case | Worst Case |
+                                  +------------+-----------+--------------+------------+
+                                  | Time       |  O(1)     |   O(log n)   | O(log n)   | 
+                                  +------------+-----------+--------------+------------+
+                                  |  	 Worst case space complexity    |    O(1)    |
+                                  +---------------------------------------+------------+
 
 */
 
