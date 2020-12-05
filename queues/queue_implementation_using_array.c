@@ -1,4 +1,5 @@
-//Queue implementation using array
+/*
+Queue implementation using array
 #include<stdio.h>
 #include<stdlib.h>
 
